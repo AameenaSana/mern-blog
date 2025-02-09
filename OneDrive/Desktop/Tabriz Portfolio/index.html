@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabriz Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<div class="first-page">
+</div>
+  
+  <div id="header">
+    <nav>
+      <!-- <img src="images/Sana_Logo.png" class="logo">-->
+      <ul>
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        
+        <li><a href="#portfolio">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-text">
+      <p>Senior Design Engineer</p>
+      <h1>Hi, I'm <span>Mahaboob Tabriz</span></h1>
+    </div>
+  </div>
+
+  <!---------------------ABOUT SECTION------------------------------>
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-call-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>
+            • Mechanical Engineer with a Master's in Machine Design from VTU, Belgaum<br>
+            • 14 years of industry experience in design, analysis, and troubleshooting<br>
+            • Worked as a Design Engineer at INFOTECH LTD and Team Leader at WIPRO TECHNOLOGIES<br>
+            • Proficient in GT Suite, Catia-V5, AutoCAD, Ansys, and NASTRAN<br>
+            • Strong problem-solving skills, effective communication, and adaptability to new technologies<br>
+            • Passionate about engineering design, innovation, and continuous learning<br>
+          </p>
+        </div>
+      </div>
+      
+      <!------------------ TAB SECTION------------->
+
+
+
+      <script>
+        function opentab(tabname) {
+          let tabLinks = document.querySelectorAll(".tab-links");
+          let tabContents = document.querySelectorAll(".tab-contents");
+      
+          tabLinks.forEach(link => link.classList.remove("active-link"));
+          tabContents.forEach(content => content.classList.remove("active-tab"));
+      
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabname).classList.add("active-tab");
+        }
+      </script>
+
+
+
+      <div class="tab-titles">
+        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+        <p class="tab-links" onclick="opentab('education')">Education</p>
+      </div>
+      <div class="tab-contents active-tab" id="skills">
+        <ul>
+          <li><span>Aerospace/Automotive:</span><br>Expertise in aerospace as well as in automotive domain as a stress analysis.</li>
+          <li><span>Software Project Management:</span><br>Planning, executing, and overseeing software development projects to ensure they meet requirements, deadlines, and budgets efficiently.</li>
+          <li><span>Mechanical Engineer:</span><br> Applying physics, mathematics, and materials science to design, analyze, manufacture, and maintain mechanical systems.</li>
+          <li><span>AutoCAD:</span><br>Computer-aided design (CAD) software used for creating precise 2D and 3D drawings in engineering, architecture, and construction.</li>
+          <li><span>ANSYS:</span><br>Simulation software used for engineering analysis, including structural, thermal, fluid dynamics, and electromagnetic simulations, to optimize product designs.</li>
+          <li><span>Avionics:</span><br>Expertise in aircraft and spacecraft electronic systems, including navigation, communication, and flight control.</li>
+        </ul>
+      </div>
+      <div class="tab-contents" id="experience">
+        <ul>
+          <li><span>Oct 2022 - Current</span><br>Development Engineer at Scania, Sweden</li>
+          <li><span>Feb 2014 - Jan 2022</span><br>HOD, Mechanical Dept. at HKBK, Bangalore (India).</li>
+          <li><span>Jun 2011 - Sep 2013</span><br>Project Engineer in automotive and aerospace domain, WIPRO, Bangalore (India).</li>
+          <li><span>Jun 2008 - Jun 2009</span><br>Design Engineer, INFOTECH Enterprises, Bangalore (India).</li>
+          <li><span>Aug 2006 - May 2007</span><br>Project Trainee, DRDO, Bangalore (India).</li>
+        </ul>
+      </div>
+      <div class="tab-contents" id="education">
+        <ul>
+          <li><span>Apr 2005 - Mar 2007</span><br>MTech, Machine Design, VTU</li>
+          <li><span> Apr 2000 - May 2005</span><br>BE, Mech Engineer, VTU</li>
+          <li><span>Jun 1996 - Jan 2000</span><br>Diploma, VTU</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+ 
+<!---------------PORTFOLIO-------------->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="images/Scania.jpg">
+        <div class="layer">
+          <h3>Development Engineer, Scania</h3>
+          <p>Expert in creepage and clearance analysis, VCB issue resolution, supplier collaboration, and redesign. Skilled in backward compatibility analysis, SCANIA processes, and tools like OAS, 3D Experience, and KS structure. Experienced in VCB 3D design with CATIA V5, busbar installation, and cross-functional alignment. Proficient in issue management, quality containment, production support, and prototype tracking to ensure robust solutions.</p>        </div>
+      </div>
+      <div class="work">
+        <img src="images/HKBK.webp">
+        <div class="layer">
+          <h3>Mechanical Dept HOD, HKBK</h3>
+          <p>Continuously evaluated performance to identify improvements, led meetings to set targets, coordinated solutions to problems, and streamlined department operations. Managed hiring, training, and scheduling to optimize team efficiency while maintaining transparency with other departments. Prepared budgets, balanced workloads, and ensured high job satisfaction. Successfully worked under tight deadlines, prioritized tasks effectively, and exceeded goals in a fast-paced environment.</p>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/wipro.webp">
+        <div class="layer">
+          <h3>Project Engineer, WIPRO Technologies</h3>
+          <p>Reviewed project quality controls, addressed design challenges, and analyzed structural static designs using CATIA V5 and ANSYS. Planned and evaluated analysis results, supported prototype development, and optimized designs through simulations. Collaborated with teams for product improvements, created CAD models, documented processes, and assisted in structural drafting. Conducted design sensitivity analysis, gauge optimization, and topology optimization to enhance performance while maintaining mass constraints.</p>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/infotech.jpg">
+        <div class="layer">
+          <h3>Design Engineer, InfoTech</h3>
+          <p>Worked as a Subject Matter Expert in MATHCAD and Hand Calculation, conducting training sessions and mentoring team members. Managed project timelines, resource allocation, and daily progress reviews to ensure timely delivery. Communicated issues with clients and assisted in resolutions while maintaining KPIs and data accuracy. Led mechanical design projects, generating pressure loads for the AIRBUS family using MATHCAD, performing simulations in NX, and preparing flight clearance reports. Utilized HYPERMESH for pre-processing and documented design processes, technical reports, and operational manuals.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!----------------------------CONTACTS------------>
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>mahaboobtabriz@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>+46 734808875</p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/mahaboob-tabriz-9a59b920/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <a href="images/Tabriz Resume.pdf" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzFoJYDeHjHjXTXHeg86poffPov5R0OFpZlbtGMapCR1mwVhKMFdHbFrIvfrds65Pi-sQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg= document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML= "Message sent successfully!"
+        setTimeout(function(){
+          msg.innerHTML=""
+
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
